@@ -519,7 +519,7 @@ body {
     background: #CF942C;
 }
 #testimonial .client-tab .item:hover h6{
-    color: #CF942C;
+    color: #222222;
 }
 #testimonial .client-tab .item:hover p{
     color: #ffffff;

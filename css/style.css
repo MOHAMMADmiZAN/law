@@ -1,0 +1,751 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+.title{
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px;
+}
+.title h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #222;
+    text-transform: uppercase;
+    padding: 30px;
+}
+.title p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #222222;
+    width: 600px;
+    display: inline-block;
+}
+/*=========================================================================banner-start==========================================================================================*/
+#banner .banner-head {
+    position: absolute;
+    width: 100%;
+    border: 1px solid #CF942C;
+    border-left: none;
+    border-right: none;
+    z-index: 8888;
+}
+
+#banner .banner-head .item {
+    display: flex;
+    padding: 10px;
+}
+
+#banner .banner-head .item p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 400;
+
+}
+
+#banner .banner-head .item i {
+    font-size: 15px;
+    color: #CF942C;
+    padding: 0 10px;
+}
+
+#banner .banner-head .text-left {
+    display: flex;
+}
+
+#banner .banner-head .text-right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#banner nav {
+    padding: 10px 0;
+    position: absolute !important;
+    width: 100%;
+    top: 75px;
+    z-index: 8888;
+}
+
+#banner nav .navbar-brand {
+    padding-left: 10px;
+}
+
+#banner nav .navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    margin: 0 30px;
+    transition: 0.4s;
+    position: relative;
+    padding: 0;
+
+}
+
+#banner nav .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #CF942C;
+    transition: 0.4s;
+}
+
+#banner .banner-content {
+    background: url("../images/lady-justice-2388500_1920.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#banner .banner-content .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, 0.7);
+    padding: 250px 0 100px 0;
+}
+
+#banner .banner-content .overlay .content h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #CF942C;
+    padding: 20px 10px;
+
+}
+
+#banner .banner-content .overlay .content p {
+    width: 550px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0 0 20px 10px;
+    margin-bottom: 10px;
+
+}
+
+#banner .banner-content .overlay .content a {
+    margin: 20px 10px;
+    padding: 15px 10px;
+    color: #ffffff;
+    background: #CF942C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#banner nav .navbar-nav .nav-link:hover {
+    color: #CF942C;
+}
+
+#banner nav .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+#banner .banner-main .prev {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 35px;
+    color: #ffffff;
+    z-index: 222;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+}
+
+#banner .banner-main .next {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 35px;
+    color: #ffffff;
+    z-index: 222;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+}
+
+#banner .banner-main .prev:hover {
+    color: #CF942C;
+}
+
+#banner .banner-main .next:hover {
+    color: #CF942C;
+}
+
+/*============================================================================banner-end===========================================================================================*/
+/*========================================================================welcome-start===============================================================================================*/
+
+#welcome .wel-content .item{
+    padding: 100px 0;
+    text-align: center;
+    border: 2px solid #6666;
+    margin: 20px 0;
+    transition: 0.4s;
+}
+#welcome .wel-content .item .icon i{
+    font-size: 35px;
+    color: #CF942C;
+    padding: 10px;
+}
+#welcome .wel-content .item .text p{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #222222;
+
+}
+#welcome .wel-content .slick-slide{
+    outline: none;
+}
+
+#welcome .wel-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    font-size: 35px;
+    color: #222222;
+    z-index: 222;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+
+}
+
+#welcome .wel-slider .next {
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    font-size: 35px;
+    color: #222222;
+    z-index: 222;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+
+}
+
+#welcome .wel-slider .prev:hover {
+    color: #CF942C;
+
+}
+
+#welcome .wel-slider .next:hover {
+    color: #CF942C;
+
+}
+#welcome .wel-slider .slick-current .item{
+    background: #CF942C;
+    border-color: #CF942C;
+
+}
+
+#welcome .wel-slider .slick-current .item i{
+    color: #ffffff;
+}
+#welcome .wel-slider .slick-current .item p{
+    color: #ffffff;
+}
+
+/*========================================================================welcome-end===============================================================================================*/
+/*============================================================================about-part-start===============================================================================================*/
+#about{
+    padding-top: 100px;
+    background: #f1f1f1;
+
+}
+#about .text {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#about .text li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #222222;
+    font-weight: 500;
+    padding: 10px;
+}
+#about .text li i{
+    color: #CF942C;
+    font-size: 25px;
+    padding: 0 10px;
+}
+#about .text li a{
+    padding: 10px 15px;
+    color: #CF942C;
+    border: 1px solid #CF942C;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.4s;
+    margin-left: 20px;
+}
+#about .text li a:hover{
+    color: #ffffff;
+    background: #CF942C;
+}
+#about img{
+    margin-top: 30px;
+}
+/*============================================================================about-part-end===============================================================================================*/
+/*====================================================================================our practice-start=====================================================================================*/
+
+
+#practice .practice-area .item{
+    padding: 60px 0;
+    text-align: center;
+    background: #f1f1f1;
+    margin: 20px 0;
+    transition: 0.4s;
+}
+#practice .practice-area .item .icon i{
+    font-size: 35px;
+    color: #CF942C;
+    padding: 10px;
+}
+#practice .practice-area .item .text p{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #222222;
+    transition: 0.4s;
+
+}
+#practice .practice-area .item .text h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #222222;
+    width: 370px;
+    font-size: 14px;
+    display: inline-block;
+    padding-top: 20px;
+    transition: 0.4s;
+}
+#practice .practice-area .item .text a{
+    padding: 15px 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+    color: #CF942C;
+    border: 1px solid #CF942C;
+    transition: 0.4s;
+}
+#practice .practice-area .item .text a:hover{
+    background: #CF942C;
+    color: #ffffff;
+}
+#practice .practice-area .item:hover{
+    border: 1px solid #CF942C;
+}
+#practice .practice-area .item:hover h6{
+    color: #CF942C;
+}
+#practice .practice-area .item p:hover{
+    color: #CF942C;
+}
+#practice .practice-area .pra-slide  .slick-slide{
+    outline: none;
+}
+#practice .practice-area .pra-slide{
+    position: relative;
+}
+ #practice .practice-area .pra-slide .prev {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    font-size: 35px;
+    color: #CF942C;
+    z-index: 222;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+     border: 1px solid #CF942C;
+     padding: 5px;
+
+}
+ #practice .practice-area .pra-slide .next {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    font-size: 35px;
+    color: #CF942C;
+    z-index: 222;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+     border: 1px solid #CF942C;
+     padding: 5px;
+
+}
+
+#practice .practice-area .pra-slide .prev:hover {
+    color: #ffffff;
+    background: #CF942C;
+
+}
+ #practice .practice-area .pra-slide .next:hover {
+    color: #ffffff;
+     background: #CF942C;
+
+}
+#practice .practice-area .pra-slide .slick-current .item{
+    border:1px solid #CF942C;
+
+}
+ #practice .practice-area .pra-slide .slick-current .item i{
+    color: #CF942C;
+} #practice .practice-area .pra-slide .slick-current .item p{
+    color: #CF942C;
+}
+
+/*====================================================================================our practice-end=====================================================================================*/
+/*=======================================================================================testimonial-start====================================================================================*/
+#testimonial .client-tab .item{
+    text-align: center;
+    background: #f1f1f1;
+    padding: 30px;
+    transition: 0.4s;
+}
+#testimonial .client-tab .item .client-name h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #222222;
+    transition: 0.4s;
+}
+#testimonial .client-tab .item .client-name p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #222222;
+    padding: 5px;
+    transition: 0.4s;
+}
+#testimonial .client-tab .item .image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: inline-block;
+    padding: 30px;
+    margin: 20px;
+    overflow: hidden;
+
+
+}
+#testimonial .client-tab .item .text p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #222222;
+    transition: 0.4s;
+}
+#testimonial .client-tab .test-slide .slick-slide{
+    outline: none;
+}
+
+
+#testimonial .client-tab .test-slide .prev {
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    font-size: 35px;
+    color: #222222;
+    z-index: 222;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+    border: 1px solid #222222;
+    padding: 5px;
+
+}
+
+
+#testimonial .client-tab .test-slide .next {
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    font-size: 35px;
+    color: #222222;
+    z-index: 222;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+    border: 1px solid #222222;
+    padding: 5px;
+
+}
+
+
+#testimonial .client-tab .test-slide .prev:hover {
+    color: #CF942C;
+    border-color: #CF942C;
+
+}
+
+
+#testimonial .client-tab .test-slide .next:hover {
+    color: #CF942C;
+    border-color: #CF942C;
+
+}
+
+#testimonial .client-tab .test-slide .slick-current .item{
+   border: 1px solid #CF942C;
+
+}
+#testimonial .client-tab .item:hover{
+    background: #CF942C;
+}
+#testimonial .client-tab .item:hover h6{
+    color: #CF942C;
+}
+#testimonial .client-tab .item:hover p{
+    color: #ffffff;
+}
+/*=======================================================================================testimonial-end====================================================================================*/
+/*======================================================================================== lawyer-tab-start============================================================================*/
+#lawyer .lawyer-tab .image{
+    height: 435px;
+    overflow: hidden;
+}
+#lawyer .lawyer-tab .lawyer-content {
+    padding: 50px;
+    background: #CF942C;
+}
+#lawyer .lawyer-tab .lawyer-content .lawyer-name{
+    position: relative;
+}
+#lawyer .lawyer-tab .lawyer-content .lawyer-name h5{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 10px;
+    color: #ffffff;
+
+}
+#lawyer .lawyer-tab .lawyer-content .lawyer-name h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+
+}
+#lawyer .lawyer-tab .lawyer-content .lawyer-name::after{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    content: "";
+    background: #ffffff;
+    width: 100%;
+    height: 2px;
+
+
+}
+#lawyer .lawyer-tab .lawyer-content .text p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 20px;
+}
+#lawyer .lawyer-tab .lawyer-content .lawyer-social a{
+
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 20px;
+}
+#lawyer .lawyer-tab .slick-slide{
+    outline: none;
+}
+
+
+#lawyer .lawyer-tab .prev {
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    font-size: 35px;
+    color: #CF942C;
+    z-index: 222;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+    border: 1px solid #CF942C;
+    padding: 5px;
+
+}
+
+
+#lawyer .lawyer-tab .next {
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    font-size: 35px;
+    color: #CF942C;
+    z-index: 222;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+    border: 1px solid #CF942C;
+    padding: 5px;
+
+}
+
+
+#lawyer .lawyer-tab .prev:hover {
+    color: #ffffff;
+    background: #CF942C;
+
+
+}
+
+
+#lawyer .lawyer-tab .next:hover {
+    color: #ffffff;
+    background: #CF942C;
+
+}
+
+/*======================================================================================== lawyer-tab-end============================================================================*/
+/*===========================================================================blog-part-start==============================================================================================*/
+#blog .blog-tab .blog-content .image{
+    overflow: hidden;
+}
+#blog .blog-tab .blog-content .text{
+    background: #f1f1f1;
+    transition: 0.4s;
+    border: 1px solid transparent;
+}
+#blog .blog-tab .blog-content .text .headline{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px;
+    color: #CF942C;
+}
+#blog .blog-tab .blog-content .text .date{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #222222;
+    transition: 0.4s;
+}
+#blog .blog-tab .blog-content .text .details{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+    color: #222222;
+    transition: 0.4s;
+
+}
+#blog .blog-tab .blog-content .text:hover {
+    border: 1px solid #CF942C;
+}
+#blog .blog-tab .blog-content .text:hover .date{
+    color: #CF942C;
+}
+#blog .blog-tab .blog-content .text:hover .details{
+    color: #CF942C;
+}
+/*==============================================================================blog-part-end===========================================================================*/
+/*====================================================================================contact-start============================================================================*/
+#contact{
+    padding: 50px 0;
+    background: #f1f1f1;
+    margin: 50px 0 0;
+}
+#contact .logo {
+    text-align: center;
+    padding: 20px;
+    border: 2px none #CF942C;
+    border-bottom-style: solid;
+}
+#contact .con-title{
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #CF942C;
+    position: relative;
+}
+#contact .con-title::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #CF942C;
+    width: 70%;
+    height: 2px;
+}
+#contact .text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 20px 0;
+    text-align: justify;
+}
+#contact .con-social a{
+    font-size: 20px;
+    margin: 15px;
+    color: #222222;
+}
+#contact .con-social a:hover{
+    color: #CF942C;
+}
+#contact .social .social-tab{
+    display: flex;
+}
+#contact .social .icon{
+    padding: 10px;
+    color: #CF942C;
+}
+#contact .social .text{
+    color: #222222;
+    padding: 10px 0;
+}
+#contact .work{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 10px;
+}
+#contact .work .item{
+    padding: 5px;
+}
+.cpy{
+    background: #CF942C;
+    text-align: center;
+    padding: 10px;
+}
+.cpy .text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+/*====================================================================================contact-end============================================================================*/

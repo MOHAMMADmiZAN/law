@@ -56,7 +56,7 @@ $('.wel-slider').slick({
     arrows: true,
     prevArrow: '<i class="fas fa-angle-double-left prev"></i>',
     nextArrow: '<i class="fas fa-angle-double-right next"></i>',
-    centerMode:true,
+    centerMode: true,
     centerPadding: '0',
     responsive: [
         {
@@ -105,7 +105,7 @@ $('.pra-slide').slick({
     arrows: true,
     prevArrow: '<i class="fas fa-angle-double-left prev"></i>',
     nextArrow: '<i class="fas fa-angle-double-right next"></i>',
-    centerMode:true,
+    centerMode: true,
     centerPadding: '0',
     responsive: [
         {
@@ -154,7 +154,7 @@ $('.test-slide').slick({
     arrows: true,
     prevArrow: '<i class="fas fa-angle-double-left prev"></i>',
     nextArrow: '<i class="fas fa-angle-double-right next"></i>',
-    centerMode:true,
+    centerMode: true,
     centerPadding: '0',
     responsive: [
         {
@@ -206,7 +206,7 @@ $('.lawyer-tab').slick({
     arrows: true,
     prevArrow: '<i class="fas fa-angle-double-left prev"></i>',
     nextArrow: '<i class="fas fa-angle-double-right next"></i>',
-    centerMode:true,
+    centerMode: true,
     centerPadding: '0',
     responsive: [
         {
@@ -244,3 +244,40 @@ $('.lawyer-tab').slick({
     ]
 
 });
+
+
+
+/// variables////
+const win = $(window);
+const html_body = $('html, body');
+const stk = $('.st-menu');
+const b2b = $('.btn-top');
+const c_stk = 'stricky';
+
+/// stricy header //
+
+
+win.scroll(function () {
+    if (win.scrollTop() > 300) {
+        stk.addClass(c_stk)
+    } else {
+        stk.removeClass(c_stk)
+    }
+});
+
+//back to top fadetoogle//
+win.scroll(
+    function () {
+        if (win.scrollTop() > 100) {
+            b2b.show()
+        } else {
+            b2b.hide()
+        }
+    }
+)
+//back to top effect//
+b2b.click(
+    function () {
+        html_body.animate({scrollTop:0},3000)
+    }
+)
